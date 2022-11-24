@@ -19,7 +19,7 @@ def pregunta_01():
     y = df["party"].values
 
     # Extraiga las variables de entrada
-    X = df.drop("party", axis=1).values
+    X = df.drop(["party"], axis=1).values
 
     # Importe el transformador OrdinalEncoder
     from sklearn.preprocessing import OrdinalEncoder
