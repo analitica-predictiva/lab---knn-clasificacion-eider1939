@@ -19,25 +19,27 @@ def pregunta_01():
     y = df["party"].values
 
     # Extraiga las variables de entrada
-    X = df.drop("party", axis=1).values
+    X = df.drop(____, _____=1).values
 
     # Importe el transformador OrdinalEncoder
-    from sklearn.preprocessing import OrdinalEncoder
+    from ____ import ____
 
     # Transforme las variables de entrada usando fit_transform
-    X = OrdinalEncoder().fit_transform(X)
+    X = ____().____(____)
 
     # Importe KNeighborsClassifier de sklearn.neighbors
-    from sklearn.neighbors import KNeighborsClassifier
+    from ____ import ____
+    
 
     # Cree un un clasificador k-NN con 6 vecinos
-    knn = KNeighborsClassifier(n_neighbors=6)
+    knn = ____(____=____)
 
     # Entrene el clasificador con el conjunto de entrenamiento
-    knn.fit(X, y)
+    knn.____(____, ____)
 
     # Retorne el score del clasificador
-    return knn.score(X, y)
+    return knn.____(____, ____)
+
 
 def pregunta_02():
     """
